@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">  
+<head>
+ <title>This is hello page</title>
+ <link th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+ <h1>Hello, How are you?</h1>
+ <div class = "main_container">
+  <div class="row">
+   <div class="left">User Id:</div>
+   <div class="left" th:text="${key1}"></div>
+  </div>
+  
+  <div class="row">
+   <div class="left">Name: </div>
+   <div class="left" th:text="${key2}"></div>
+  </div>
+  
+  <div class="row">
+   <div class="left">Email: </div>
+   <div class="left" th:text="${key3}"></div>
+  </div>
+  </div>
+  
+
+
+</body>
+</html>
